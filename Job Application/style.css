@@ -1,0 +1,104 @@
+/* *{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: grey;
+}
+.container{
+    max-width: 640px;
+    margin: 0 auto;
+    
+}
+.container .box{
+    max-width: 640px;
+    padding: 20px;
+    background-color: white;
+    margin-top: 50px;
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
+    border-radius: 10px;
+
+}
+.form-container{
+   display: flex;
+   grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+} */
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+body {
+    /* background-color: #d3c7c7;  */
+    background-image: url("job.jpg");
+    object-fit: cover;
+    background-size: cover;
+    font-family: Arial, sans-serif; /* Use Arial font or fallback to sans-serif */
+}
+
+.container {
+    max-width: 640px; /* Limit container width */
+    margin: 20px auto; /* Center the container horizontally with a bit of top margin */
+    padding: 20px; /* Add padding inside the container */
+}
+
+.box {
+    background-color: rgb(77, 146, 169); /* White background for the box */
+    padding: 20px; /* Add padding inside the box */
+    border-radius: 10px; /* Rounded corners for the box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the box */
+}
+
+h1 {
+    font-size: 24px; /* Larger font size for the heading */
+    margin-bottom: 20px; /* Add some bottom margin to separate from the form */
+}
+
+.small {
+    font-size: 14px; /* Smaller font size for the small text */
+    color: #999; /* Light gray color for the small text */
+}
+
+.form-container {
+    display: grid; /* Use CSS grid layout for form elements */
+    gap: 10px; /* Add some gap between form elements */
+}
+
+.form-control {
+    margin-bottom: 20px; /* Add bottom margin to separate form controls */
+}
+
+label {
+    display: block; /* Display labels as block elements for better alignment */
+    font-weight: bold; /* Make labels bold */
+    margin-bottom: 5px; /* Add some bottom margin to separate labels from inputs */
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%; /* Make inputs and select elements fill the available width */
+    padding: 10px; /* Add padding to inputs and select elements */
+    border: 1px solid #ccc; /* Add a light gray border */
+    border-radius: 5px; /* Add some border radius for a softer look */
+}
+
+button {
+    padding: 10px 20px; /* Add padding to buttons */
+    background-color: teal; /* Blue background color for buttons */
+    color: #fff; /* White text color for buttons */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add some border radius for a softer look */
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+button:hover {
+    background-color: green; /* Darkger blue background color on hover */
+}
